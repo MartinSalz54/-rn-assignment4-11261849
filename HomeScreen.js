@@ -11,8 +11,8 @@ const HomeScreen = ({ route }) => {
   ];
 
   const popularJobs = [
-    { id: '1', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/google.png.png') },
-    { id: '2', title: 'Product Manager', company: 'Beats', salary: '$84,000/y', location: 'Florida, US', logo: require('./assets/google.png.png') },
+    { id: '1', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '2', title: 'Product Manager', company: 'Beats', salary: '$84,000/y', location: 'Florida, US', logo: require('./assets/beats.png') },
     { id: '3', title: 'Product Manager', company: 'Facebook', salary: '$86,000/y', location: 'Florida, US', logo: require('./assets/facebook.png.png') },
   ];
 
@@ -44,7 +44,7 @@ const HomeScreen = ({ route }) => {
           <Text style={styles.name}>{name}Eric Atsu</Text>
           <Text style={styles.email}>{email}eric@gmail.com</Text>
         </View>
-        <Image source={require('./assets/facebook.png.png')} style={styles.profilePic} />
+        <Image source={require('./assets/profile.png')} style={styles.profilePic} />
       </View>
       <View style={styles.searchContainer}>
         <Text style={styles.searchText}>Search a job or position</Text>
@@ -155,10 +155,11 @@ const styles = StyleSheet.create({
   logo: {
     width: 50,
     height: 50,
+    backgroundColor: '#fff'
   },
   featuredCardSalary: {
     fontSize: 14,
-    color: '#888',
+    color: '#fff',
     marginTop: 59,
   },
   cardDetails: {
@@ -167,14 +168,15 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 16,
     fontWeight: 'bold',
+    color:'#000'
   },
   cardCompany: {
     fontSize: 14,
-    color: '#888',
+    color: '#000',
   },
   featuredCardLocation: {
     fontSize: 14,
-    color: '#888',
+    color: '#fff',
     marginTop: 72,
     marginLeft: 40,
   },
