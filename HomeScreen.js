@@ -7,13 +7,29 @@ const HomeScreen = ({ route }) => {
 
   const featuredJobs = [
     { id: '1', title: 'Software Engineer', company: 'Facebook', salary: '$180,000', location: 'Accra, Ghana', logo: require('./assets/facebook.png.png') },
-    { id: '2', title: 'Software Engineer', company: 'Google', salary: '$160,000', location: 'Mountain View, US', logo: require('./assets/google.png.png') },
+    { id: '9', title: 'Software Engineer', company: 'Google', salary: '$160,000', location: 'Mountain View, US', logo: require('./assets/google.png.png') },
+    { id: '2', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '3', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '4', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '5', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '6', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '7', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '8', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '9', title: 'Software Engineer', company: 'Google', salary: '$160,000', location: 'Mountain View, US', logo: require('./assets/google.png.png') },
   ];
 
   const popularJobs = [
     { id: '1', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
-    { id: '2', title: 'Product Manager', company: 'Beats', salary: '$84,000/y', location: 'Florida, US', logo: require('./assets/beats.png') },
-    { id: '3', title: 'Product Manager', company: 'Facebook', salary: '$86,000/y', location: 'Florida, US', logo: require('./assets/facebook.png.png') },
+    { id: '6', title: 'Product Manager', company: 'Beats', salary: '$84,000/y', location: 'Florida, US', logo: require('./assets/beats.png') },
+    { id: '7', title: 'Product Manager', company: 'Facebook', salary: '$86,000/y', location: 'Florida, US', logo: require('./assets/facebook.png.png') },
+    { id: '2', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '3', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '4', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '5', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '6', title: 'Product Manager', company: 'Beats', salary: '$84,000/y', location: 'Florida, US', logo: require('./assets/beats.png') },
+    { id: '7', title: 'Product Manager', company: 'Facebook', salary: '$86,000/y', location: 'Florida, US', logo: require('./assets/facebook.png.png') },
+    { id: '8', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
+    { id: '9', title: 'Jr Executive', company: 'Burger King', salary: '$96,000/y', location: 'Los Angeles, US', logo: require('./assets/burger-king.png') },
   ];
 
   const renderJobCard = ({ item, section }) => (
@@ -125,7 +141,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: 'black',
+    color: '#000',
   },
   sectionTitlePopular: {
     fontSize: 20,
@@ -151,6 +167,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     alignItems: 'center',
     marginRight: 10,
+    color:'#000',
   },
   logo: {
     width: 50,
